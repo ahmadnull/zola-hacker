@@ -2,9 +2,9 @@
 @import "svg-icons";
 @import "primary-font";
 
-$body-background: $cod-grey !default;
+$body-background: $winter-night !default;
 $body-foreground: $gallery !default;
-$header: $amber !default;
+$header: $arch-cyan !default;
 $blockquote-color: $silver-chalice !default;
 $blockquote-border: $dove-grey !default;
 $container-max-width: 1000px;
@@ -22,7 +22,7 @@ body {
   color: $body-foreground;
   font-size: 16px;
   line-height: 1.5;
-  font-family: "JetBrains Mono", monospace;
+  font-family: ui-monospace, "JetBrains Mono", Menlo, Monaco, Consolas, "Courier New", monospace;
   font-feature-settings:
     "calt" 0,
     "zero" 1,
@@ -62,7 +62,7 @@ li {
 header {
   background: rgba(0, 0, 0, 0.1);
   width: 100%;
-  border-bottom: 1px dashed $amber; //header;
+  border-bottom: 1px dashed $arch-cyan; //header;
   padding: 20px 0;
   margin: 0 0 40px 0;
 }
@@ -72,7 +72,7 @@ header h1 {
   line-height: 1.5;
   margin: 0 0 0 -40px;
   font-weight: bold;
-  color: $amber; //$header;
+  color: $sea-blue; //$header;
   text-shadow:
     0 1px 1px rgba(0, 0, 0, 0.1),
     0 0 5px rgba(255, 191, 0, 0.1),
@@ -171,7 +171,7 @@ ul li {
   list-style-type: ">> ";
 
   &::marker {
-    color: $amber;
+    color: $arch-cyan;
   }
 }
 
@@ -231,7 +231,7 @@ table {
 }
 
 th {
-  border-bottom: 1px dashed $amber;
+  border-bottom: 1px dashed $arch-cyan;
   padding: 5px 10px;
 }
 
@@ -242,8 +242,8 @@ td {
 hr {
   height: 0;
   border: 0;
-  border-bottom: 1px dashed $amber;
-  color: $amber;
+  border-bottom: 1px dashed $arch-cyan;
+  color: $arch-cyan;
 }
 
 /* Buttons
@@ -264,7 +264,7 @@ hr {
   border-bottom: 2px solid rgba(0, 0, 0, 0.7);
   border-top: 2px solid rgba(0, 0, 0, 1);
   color: rgba(255, 255, 255, 0.8);
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: ui-monospace, "JetBrains Mono", Menlo, Monaco, Consolas, "Courier New", monospace;
   // font-weight: bold;
   font-size: 14px;
   text-decoration: none;
@@ -357,7 +357,7 @@ footer {
 .pages > .page {
   padding-bottom: 2em;
   margin-bottom: 1.8em;
-  border-bottom: 1px dashed $amber;
+  border-bottom: 1px dashed $arch-cyan;
 }
 
 .pages > .page:last-child {
@@ -418,8 +418,8 @@ time.page-time {
 .pagination {
   padding-top: 20px;
   text-align: center;
-  border-top: 1px dashed $amber;
-  color: $amber;
+  border-top: 1px dashed $arch-cyan;
+  color: $sea-blue;
 
   .previous-page {
     margin-right: 2em;
@@ -454,7 +454,7 @@ footer {
     color: #c7254e;
     background-color: black;
     border-radius: 4px;
-    font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
+    font-family: ui-monospace, "JetBrains Mono", Menlo, Monaco, Consolas, "Courier New", monospace;
   }
 
   a {
@@ -480,7 +480,7 @@ textarea {
   border: 1px solid rgba(255, 255, 255, 0.15);
   padding: 10px;
   font-size: 16px;
-  color: $amber;
+  color: $sea-blue;
   border-radius: 2px;
   resize: none;
   margin-bottom: 6px;

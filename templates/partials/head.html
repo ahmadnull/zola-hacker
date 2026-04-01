@@ -19,6 +19,21 @@ onload="renderMathInElement(document.body);"></script>
 
 <script type="module">
   import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';
+  mermaid.initialize({
+  theme: "base",
+  themeVariables: {
+    background: "#202020",          // page‑like background
+    primaryColor: "#334455",       // main node color
+    primaryBorderColor: "#a9c7ff",    // node border
+    primaryTextColor: "#eee",      // node text
+    lineColor: "#a9c7ff",             // arrow / line color
+    secondaryColor: "#446688",
+    tertiaryColor: "#557799",
+  },
+  fontFamily: "ui-monospace, monospace",
+  // optional: keep size consistent with your body font
+  fontSize: "14px",
+});
 </script>
 {% if config.generate_feeds %}<link rel="alternate" type="application/atom+xml" title="Atom feed" href="{{ get_url(path="/atom.xml") }}">{% endif %}
 {% include "partials/head/css.html" -%}
